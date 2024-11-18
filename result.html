@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    .form-container {
+      text-align: center;
+      display: block;
+      position: relative;
+      right: 18%;
+    }
+    .form-container label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #1d7ed3; /* Light blue text */
+      position: relative;
+      right: 38%;
+      font-weight: bold;
+    }
+    .form-container input[type="text"] {
+      width: 300px;
+      height: 40px;
+      border: 2px solid #a8d5a0; /* Light green border */
+      border-radius: 5px;
+      padding: 0 10px;
+      font-size: 14px;
+      color: #68b5e6; /* Placeholder text color */
+      display: block;
+    }
+    .form-container input[type="text"]::placeholder {
+      color: #74d2ee;
+    }
+    .form-container button {
+      width: 300px;
+      height: 40px;
+      background-color: #6caed6; /* Light blue */
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .form-container button:hover {
+      background-color: #92cc65; /* Darker blue for hover effect */
+    }
+
+
+    header {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 30%;
+    left: 5%;
+    
+  }
+  
+  .logo img {
+    width: 20%; /* Default logo size */
+    
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    color: #666;
+    margin: 5px 0 20px;
+  }
+  
+  .student-portal button {
+    background-color: #00b4d8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .student-portal button:hover {
+    background-color: #0077b6;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #005f73;
+  }
+  
+  /* Responsive Design for Tablets and Small Screens */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .logo img {
+      width: 100px;
+    }
+  
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    nav ul li {
+      margin: 5px 10px;
+    }
+  
+    .student-portal button {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    .logo img {
+      width: 200px;
+    }
+  
+    nav ul li {
+      margin: 5px 5px;
+    }
+  
+    .student-portal button {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Styles for Larger Screens (PCs) */
+  @media (min-width: 1024px) {
+    header {
+      text-align:center; /* Align text to the left for larger screens */
+      padding: 10px 40px;
+    }
+  
+    .logo {
+      float: calc();
+      margin-right: 20px;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+  
+    p {
+      margin: 5px 0;
+      font-size: 1.1rem;
+    }
+  
+    nav ul {
+      float: calc();
+    }
+  
+    nav ul li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+  
+    .student-portal {
+      clear: both;
+      margin-top: 10px;
+    }
+  
+    .student-portal button {
+      padding: 12px 24px;
+      font-size: 1rem;
+    }
+  }
+  button > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+  }
+  button > a:visited{
+    color: #7ef6ea;
+  }
+  
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="https://forms.saylaniwelfare.com/static/media/logo.22bf709605809177256c.png" alt="Saylani Logo">
+        </div>
+        <h1>Registration Form - SMIT</h1>
+        <p>Services - Education - Registration</p>
+        <div class="student-portal">
+          <button> <a href="studen.html">Student Portal</a></button>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Registration</a></li>
+            <li><a href="id.html">Download ID Card</a></li>
+            <li><a href="result.html">Results</a></li>
+          </ul>
+        </nav>
+      </header>
+  <div class="form-container">
+    <label for="roll number">Roll Number</label>
+    <input type="text" id="cnic" placeholder="provide(Roll Number)">
+    <button type="submit">SUBMIT</button>
+  </div>
+</body>
+</html>
